@@ -1,5 +1,6 @@
 using UnityEngine;
 
+// TODO: クラスのプロパティについてカプセル化を検討する。
 public class RotateCamera : MonoBehaviour
 {
     public float rotationSpeed;

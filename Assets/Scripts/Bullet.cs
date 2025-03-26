@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
+// TODO: クラスのプロパティについてカプセル化を検討する。
 public class Bullet : MonoBehaviour
 {
     public float speed = 100;

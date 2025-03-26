@@ -1,6 +1,9 @@
 using System.Linq;
 using UnityEngine;
 
+// TODO: 継承を使用して敵キャラクターを作成する。現状は「通常敵」「強化敵」「ボス」「取り巻き」の4種が存在する。
+// TODO: 同時にポリモーフィズム/抽象化についても検討する。敵であれば必ずプレーヤーに向かっていく。攻撃方法や強度は異なる。
+// TODO: クラスのプロパティについてカプセル化を検討する。
 public class Enemy : MonoBehaviour
 {
     public float speed = 3.0f;

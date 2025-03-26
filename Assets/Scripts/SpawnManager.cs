@@ -1,5 +1,6 @@
 using UnityEngine;
 
+// TODO: クラスのプロパティについてカプセル化を検討する。
 public class SpawnManager : MonoBehaviour
 {
     public GameObject[] enemyPrefabs;

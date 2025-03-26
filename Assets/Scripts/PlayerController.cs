@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// TODO: クラスのプロパティについてカプセル化を検討する。
 public class PlayerController : MonoBehaviour
 {
     public float speed = 3;
