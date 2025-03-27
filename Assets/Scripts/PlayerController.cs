@@ -57,7 +57,7 @@ public class PlayerController : MonoBehaviour
 
         if (transform.position.y < -5)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene(0);
         }
     }
 
