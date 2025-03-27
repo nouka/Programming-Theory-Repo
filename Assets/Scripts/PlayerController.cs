@@ -2,26 +2,24 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-// TODO: クラスのプロパティについてカプセル化を検討する。
 public class PlayerController : MonoBehaviour
 {
-    public float speed = 3;
-    public float jumpForce = 5;
-    public bool hasPowerUp = false;
     public GameObject powerUpIndicator;
     public GameObject bulletPrefab;
     public GameObject fxSmash;
 
     new Rigidbody rigidbody;
+    bool hasPowerUp = false;
 
     GameObject focalPoint;
     ParticleSystem smashParticle;
 
+    readonly float speed = 2;
+    readonly float jumpForce = 5;
     readonly float powerUpStrength = 15.0f;
     POWER_UP_TYPE powerUpType;
     bool smashed = false;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
@@ -29,7 +27,6 @@ public class PlayerController : MonoBehaviour
         smashParticle = fxSmash.GetComponent<ParticleSystem>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         powerUpIndicator.transform.position = transform.position + new Vector3(0, -0.5f, 0);

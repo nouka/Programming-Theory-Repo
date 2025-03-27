@@ -1,22 +1,19 @@
 using System.Collections;
 using UnityEngine;
 
-// TODO: クラスのプロパティについてカプセル化を検討する。
 public class Bullet : MonoBehaviour
 {
-    public float speed = 100;
-    public float attackPower = 100;
+    // 弾速
+    readonly float speed = 100;
+    // 弾丸が敵に与える力
+    readonly float attackPower = 100;
+    // 生存期間（秒）
+    readonly float lifetime = 3;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         GetComponent<Rigidbody>().AddForce(transform.up * speed, ForceMode.Impulse);
         StartCoroutine(AutoDestroy());
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
     }
 
     void OnTriggerEnter(Collider other)
@@ -31,7 +28,7 @@ public class Bullet : MonoBehaviour
 
     IEnumerator AutoDestroy()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(lifetime);
         Destroy(gameObject);
     }
 }

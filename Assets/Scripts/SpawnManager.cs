@@ -1,18 +1,16 @@
 using UnityEngine;
 
-// TODO: クラスのプロパティについてカプセル化を検討する。
 public class SpawnManager : MonoBehaviour
 {
     public GameObject[] enemyPrefabs;
     public GameObject bossPrefab;
     public GameObject sentinelPrefab;
     public GameObject[] powerUpPrefabs;
-    public int enemiesCount = 0;
 
+    int enemiesCount = 0;
     readonly float spawnRange = 9.0f;
     int waveNumber = 1;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         SpawnEnemyWave(waveNumber);
@@ -20,7 +18,6 @@ public class SpawnManager : MonoBehaviour
         Instantiate(powerUpPrefabs[index], GenerateSpawnPosition(), powerUpPrefabs[index].transform.rotation);
     }
 
-    // Update is called once per frame
     void Update()
     {
         enemiesCount = FindObjectsByType<Enemy>(FindObjectsSortMode.None).Length;

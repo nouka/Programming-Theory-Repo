@@ -1,26 +1,23 @@
-using System.Linq;
 using UnityEngine;
 
 // TODO: 継承を使用して敵キャラクターを作成する。現状は「通常敵」「強化敵」「ボス」「取り巻き」の4種が存在する。
 // TODO: 同時にポリモーフィズム/抽象化についても検討する。敵であれば必ずプレーヤーに向かっていく。攻撃方法や強度は異なる。
-// TODO: クラスのプロパティについてカプセル化を検討する。
 public class Enemy : MonoBehaviour
 {
-    public float speed = 3.0f;
-    public bool canAttack = false;
-    public float attackPower = 100;
+    [SerializeField] bool canAttack = false;
+    [SerializeField] float attackPower = 100;
 
     new Rigidbody rigidbody;
     GameObject player;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    readonly float speed = 1.0f;
+
     void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
         player = GameObject.Find("Player");
     }
 
-    // Update is called once per frame
     void Update()
     {
         Vector3 lookDirection = (player.transform.position - transform.position).normalized;
