@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4447262060068657203}
   - component: {fileID: 7150722850951519023}
   - component: {fileID: 8738488296968401045}
-  - component: {fileID: -7360885139512570066}
+  - component: {fileID: 565646349359983196}
   m_Layer: 0
   m_Name: Power Up_Bullet
   m_TagString: PowerUp
@@ -109,7 +109,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.528658, y: 0.43810678, z: 0.4578313}
   m_Center: {x: 0, y: -0.000000022351742, z: 0}
---- !u!114 &-7360885139512570066
+--- !u!114 &565646349359983196
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,4 +121,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78412653b9d544a5aa8eb8675dc4e8ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 1
+  Type: 1

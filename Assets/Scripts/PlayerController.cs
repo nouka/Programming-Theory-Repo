@@ -36,11 +36,11 @@ public class PlayerController : MonoBehaviour
 
         rigidbody.AddForce(speed * verticalInput * focalPoint.transform.forward);
 
-        if (hasPowerUp && (powerUpType == POWER_UP_TYPE.BULLET || powerUpType == POWER_UP_TYPE.SMASH))
+        if (hasPowerUp && (powerUpType == POWER_UP_TYPE.FIRE_BULLET || powerUpType == POWER_UP_TYPE.SMASH))
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                if (powerUpType == POWER_UP_TYPE.BULLET)
+                if (powerUpType == POWER_UP_TYPE.FIRE_BULLET)
                 {
                     Instantiate(bulletPrefab, transform.position, focalPoint.transform.rotation * bulletPrefab.transform.rotation);
                 }
@@ -63,7 +63,7 @@ public class PlayerController : MonoBehaviour
         if (other.CompareTag("PowerUp"))
         {
             hasPowerUp = true;
-            powerUpType = other.GetComponent<PowerUp>().type;
+            powerUpType = other.GetComponent<PowerUp>().Type;
             powerUpIndicator.SetActive(true);
             Destroy(other.gameObject);
             StopCoroutine(PowerUpCountdownRoutine());

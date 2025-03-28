@@ -501,7 +501,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e921fb25e517f474485a5ad2e4e35c37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 200
 --- !u!1001 &754018877
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -597,7 +596,6 @@ MonoBehaviour:
   - {fileID: 1685222272968760832, guid: 9da76c4de15cb46709ade70b022af70a, type: 3}
   - {fileID: 3099679284631393113, guid: e8b3b584379fb4e1ea8146258eb0522e, type: 3}
   - {fileID: 1685222272968760832, guid: ceffc8e8a2cb3415186b66c8547fb58b, type: 3}
-  enemiesCount: 0
 --- !u!4 &760403192
 Transform:
   m_ObjectHideFlags: 0
@@ -922,9 +920,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1529b02d2f7044128b8bcf4696eec71b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
-  jumpForce: 5
-  hasPowerUp: 0
   powerUpIndicator: {fileID: 2107584463}
   bulletPrefab: {fileID: 3645836311384813232, guid: 53521d5d0011443d5a8ff3383fe021cf, type: 3}
   fxSmash: {fileID: 269882847}

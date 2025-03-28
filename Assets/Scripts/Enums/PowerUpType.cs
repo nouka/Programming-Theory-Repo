@@ -1,6 +1,6 @@
 public enum POWER_UP_TYPE
 {
     STRONGER,
-    BULLET,
+    FIRE_BULLET,
     SMASH
 }

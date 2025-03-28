@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7799469028170424281}
   - component: {fileID: 2656054376927156003}
   - component: {fileID: 3339452891810930739}
-  - component: {fileID: 362764496779802542}
+  - component: {fileID: 4140591603298412960}
   m_Layer: 0
   m_Name: Sentinel
   m_TagString: Enemy
@@ -137,7 +137,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &362764496779802542
+--- !u!114 &4140591603298412960
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,9 +146,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 8080968157948387637}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0b0f1cd91435412f8148bcfa4fe303c, type: 3}
+  m_Script: {fileID: 11500000, guid: 003becff977c041ce864471e029cd5a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
-  canAttack: 0
-  attackPower: 100

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 541286449968383686}
   - component: {fileID: 8667280358658171132}
   - component: {fileID: 4422525818827504023}
-  - component: {fileID: 3893193178396150906}
+  - component: {fileID: 3626072578605251896}
   m_Layer: 0
   m_Name: Power Up_Smash
   m_TagString: PowerUp
@@ -109,7 +109,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.528658, y: 0.43810678, z: 0.4578313}
   m_Center: {x: 0, y: -0.000000022351742, z: 0}
---- !u!114 &3893193178396150906
+--- !u!114 &3626072578605251896
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,4 +121,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78412653b9d544a5aa8eb8675dc4e8ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 2
+  Type: 2
